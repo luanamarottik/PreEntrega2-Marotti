@@ -1,0 +1,308 @@
+/* RESET */
+* {
+    margin:0;
+    padding:0;
+}
+
+/* GLOBALES */
+.body {
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    font-size: 16px;
+    font-family: "Open Sans", "Roboto Slab", "Lora", sans-serif;
+    color: #333333;
+    background-color: #e9e5e3;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+.header {
+    grid-row: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.header img{
+    display: inline;
+    width: 300px;
+    height: 102px;
+    padding-left: 2.5rem;
+}
+
+/* MENU PRINCIPAL */
+.navegacionPrincipal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    margin: 2rem auto;
+    list-style-type: none; 
+    text-align: center;
+}
+
+.navegacionPrincipal ul li {
+    display: flex;
+    flex-direction: column;
+    background-color: #748e81;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.navegacionPrincipal li a {
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #ffffff;
+}
+
+.navegacionPrincipal li a:active {
+    color: #e9e5e3;
+}
+
+/* MAIN */
+.main {
+    grid-row: 2;
+}
+
+/* FOOTER */
+.footer{
+    grid-row: 3;
+    display: inline-block;
+    position: relative;
+}
+
+.footer td {
+   text-align: left;
+}
+
+/* TITULOS Y TEXTOS*/ 
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.5rem;
+    color: #4F7375;
+    text-decoration: none;
+    position: relative;
+    text-align:center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    background-color: #274442;
+    color: #e9e5e3;
+    position: relative;
+    text-align:center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #4F7375;
+    color: #e9e5e3;
+    position: relative;
+    text-align:center;
+    margin-top: 5rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+
+h4{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+    color: #748e81;
+    position: relative;
+    text-align:left;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #333333;
+    position: relative;
+    text-align:center;
+    text-decoration: none;
+}
+
+p{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   display: inline-block;
+   position: relative;
+}
+
+/*** ESPECIFICOS POR PAGINA ***/
+/** INDEX **/
+/* VIDEO PRESENTACION */
+#logoVideo {
+    width: 100%;
+    height: 300px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/** MISION **/
+/* MAIN MISION */
+#mainMision {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+/* SECCIONES */
+#sobreMarca{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background-color: #748e81;
+    padding: 2rem;
+    border-radius: 25px;
+    border: 5px solid;
+}
+
+#sobreMarca p{
+    color:#ffffff
+}
+
+#sobreManuela{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+}
+
+#imgSobreManuela{
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 25px;
+}
+
+#sobreManuela p{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+/** PRENDAS **/
+/* MENU SECUNDARIO */
+.navegacionSecundaria {
+    width: 100%;
+    margin: 1rem auto;
+    list-style-type: none; 
+    text-align: center;
+    font-size: 0;
+}
+
+.navegacionSecundaria > ul li {
+    display: inline-block;
+    width: 20%;
+    position: relative;
+    background-color: #274442
+}
+
+.navegacionSecundaria li a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.0rem;
+    line-height: 1.5rem;
+    color: #ffffff;
+    border-color: #ffffff;
+    border-width: 10rem;
+}
+
+/* SECCIONES */
+.prendas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+}
+
+.prendas div{
+    align-content: center;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    justify-content: center;
+}
+
+.prendas a{
+    display: block;
+    align-self: center;
+    padding-top: 0.3rem;
+}
+
+.prendas a:hover{
+    color: #ffffff;
+    background-color: #274442
+}
+
+.prendas img{
+    display: block;
+    align-self: center;
+}
+
+/** CONTACTO **/
+/* FORMULARIO */
+.formularioAgenda{
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/* CAMBIOS PARA PANTALLA MONITOR */
+@media (min-width: 576px){
+    /* MENU PRINCIPAL */
+    .navegacionPrincipal ul li{
+        display: inline-block;
+    }
+
+    /*** ESPECIFICOS POR PAGINA ***/
+    /** MISION **/
+    /* SECCIONES */
+    #sobreManuela{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    #imgSobreManuela{
+        display: inline-block;
+        align-content: center;
+        align-self: center;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        margin-left: 200px;
+        border-radius: 25px;
+    }
+    
+    #sobreManuela p{
+        margin-left: 15px;
+        margin-right: 200px;
+        margin-top: 80px;
+    }
+
+    
+    /** PRENDAS **/
+    /* MENU SECUNDARIO */
+    .navegacionSecundaria {
+        width: 60%;
+    }
+}
+
